@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+---add Posts----
+
+<form method="post">
+    {% csrf_token %}
+
+    <p><input type="text" name="title" placeholder="Title"></p>
+    <p><textarea name="desc" placeholder="Description"></textarea></p>
+    <button type="submit" name="addpost">Add Post</button>
+
+</form>
+</body>
+</html>
