@@ -6,6 +6,6 @@ class Posts(models.Model):
     desc = models.TextField()
 
 
-    def __str__(self):
-        return self.title
+    # def __str__(self):
+    #     return self.title
 

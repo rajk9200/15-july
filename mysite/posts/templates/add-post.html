@@ -7,6 +7,14 @@
 <body>
 ---add Posts----
 
+{% if messages %}
+<div class="messages">
+    {% for message in messages %}
+    <div{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    {% endfor %}
+</div>
+{% endif %}
+
 <form method="post">
     {% csrf_token %}
 
